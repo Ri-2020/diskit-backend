@@ -5,6 +5,6 @@ const router = express.Router();
 
 router.post("/showdiskit", videoController.showDiscussion);
 router.post("/newdiskit", videoController.makeNewDiskit);
-router.get("/getDiskitsList", videoController.getDiskit);
+router.get("/get-diskits", videoController.getDiskit);
 
 export default router;

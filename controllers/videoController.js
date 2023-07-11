@@ -104,8 +104,8 @@ class videoController {
   };
   static getDiskit = async (req, res) => {
     try {
-      const diskitsData = await VideoModel.find({});
-      
+      const diskitsData = await VideoModel.find();
+
       if (diskitsData != null) {
         res.status(200).send({
           status: "success",
